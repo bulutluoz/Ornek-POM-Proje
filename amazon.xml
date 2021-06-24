@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="amazon">
+    <test name="amazon butun testler">
+        <classes>
+            <class name="tests.D23_HomeworkAmazon">
+                <methods>
+                    <include name="hucreTest"></include>
+                </methods>
+            </class>
+
+            <class name="tests.D23_HomeworkSatirSayisi">
+                <methods>
+                    <exclude name="sutunSayisi"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
