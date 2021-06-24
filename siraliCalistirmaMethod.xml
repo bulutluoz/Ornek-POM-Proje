@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="sirali method calistirma">
+    <test name="sirali method">
+        <classes>
+            <class name="tests.D23_HomeworkAmazon">
+                <methods>
+                    <include name="AmazonYazisi"></include>
+                </methods>
+            </class>
+            <class name="tests.D23_HomeworkSatirSayisi">
+                <methods>
+                    <exclude name="sutunSayisi"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

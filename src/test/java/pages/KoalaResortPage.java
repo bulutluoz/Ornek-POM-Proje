@@ -25,6 +25,10 @@ public class KoalaResortPage {
     public WebElement loginButonu;
 
 
+    @FindBy(xpath = "//*[text()='Try again please']")
+    public WebElement girisYapilamadiElementi;
+
+
 
 
 }

@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="coklu class calistirma" parallel="classes" thread-count="2">
+    <test name="coklu calistirma testi">
+        <classes>
+            <class name="tests.D23_HomeworkSatirSayisi"></class>
+            <class name="tests.D23_HomeworkAmazon"></class>
+        </classes>
+    </test>
+</suite>

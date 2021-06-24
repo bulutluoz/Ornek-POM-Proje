@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="sirali method calistirma" parallel="methods" thread-count="2" verbose="5">
+
+
+    <!-- paralel calisma asagida secilen dosyalarla hic ilgilenmez
+    sectigimiz tum package/ class veya method'lari
+    belirleyecegimiz SEVIYEDE paralel olarak calistirir -->
+
+    <!-- verbose execeution sonrasi consolda yazdirilan aciklamalarin daha uzun veya kisa olmasini belirler
+     1 ile 10 arasinda bir deger alabilir
+     1 en az aciklama
+     10 en cok aciklama demektir -->
+
+    <test name="sirali method">
+        <classes>
+            <class name="tests.D23_HomeworkAmazon">
+                <methods>
+                    <include name="AmazonYazisi"></include>
+                </methods>
+            </class>
+            <class name="tests.D23_HomeworkSatirSayisi">
+                <methods>
+                    <exclude name="sutunSayisi"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
