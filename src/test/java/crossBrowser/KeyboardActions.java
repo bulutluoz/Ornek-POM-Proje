@@ -25,7 +25,7 @@ public class KeyboardActions extends TestBaseCross {
         driver.get("https://www.amazon.com");
 
         // 3- Arama kutusuna actions method’larine kullanarak samsung A71 yazdirin ve Enter’a basarak arama yaptirin
-        Thread.sleep(2000);
+        Thread.sleep(5000);
         WebElement aramaKutusu= driver.findElement(By.id("twotabsearchtextbox"));
 
         aramaKutusu.sendKeys("samsung A71" + Keys.ENTER);
@@ -43,7 +43,7 @@ public class KeyboardActions extends TestBaseCross {
                 sendKeys(Keys.ENTER).
               perform();
          */
-        Thread.sleep(10000);
+        Thread.sleep(15000);
         String actualTitle=driver.getTitle();
         String arananKelime= "samsung A71";
         System.out.println(actualTitle);

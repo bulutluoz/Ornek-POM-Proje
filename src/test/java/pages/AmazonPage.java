@@ -25,6 +25,13 @@ public class AmazonPage {
     @FindBy(xpath = "(//tr[1])//td")
     public List<WebElement> birinciSatirElementleri;
 
+    @FindBy(id = "twotabsearchtextbox")
+    public WebElement aramaKutusu;
+
+
+    @FindBy (xpath = "//div[@class='sg-col-inner']")
+    public WebElement sonucYazisiElementi;
+
     public void enAltaGit(){
         Actions actions=new Actions(Driver.getDriver());
         actions.sendKeys(Keys.END).perform();

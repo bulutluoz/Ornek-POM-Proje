@@ -23,7 +23,7 @@ public abstract class TestBaseCross {
     public void setUp(@Optional String browser){
         driver = DriverCross.getDriver(browser);
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
     }
 
     @AfterMethod
