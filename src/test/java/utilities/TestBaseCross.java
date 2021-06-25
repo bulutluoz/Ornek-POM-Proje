@@ -29,7 +29,7 @@ public abstract class TestBaseCross {
     @AfterMethod
     public void tearDown(){
 
-        //DriverCross.closeDriver();
+        DriverCross.closeDriver();
     }
 
 }

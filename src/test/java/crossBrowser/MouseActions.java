@@ -10,7 +10,7 @@ public class MouseActions extends TestBaseCross {
         driver.get("https://www.amazon.com");
         driver.findElement(By.partialLinkText("Today")).click();
 
-        driver.close();
+
     }
 
 }

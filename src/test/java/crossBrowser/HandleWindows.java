@@ -43,7 +43,7 @@ public class HandleWindows extends TestBaseCross {
         WebElement souceLabYazisiElementi=driver.findElement(By.xpath("//a[text()='Sauce Labs']"));
         System.out.println(souceLabYazisiElementi.getText());
 
-        driver.quit();
+
 
     }
 
